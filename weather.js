@@ -1,8 +1,18 @@
 #!/usr/bin/env node
 
 import { getArgs }  from "./helpers/args.js"
-import { printHelp } from "./services/log.services.js"
+import { printError, printHelp, printSucces } from "./services/log.services.js"
 import { saveKeyValue } from "./services/storage.service.js"
+
+
+const saveToken = async (token) => {
+    try {
+        await saveKeyValue("token", token)
+        printSucces("Token saved!")
+    } catch (error) {
+        printError(error.message)
+    }
+}
 
 
 const initCLI = () => {
@@ -19,7 +29,7 @@ const initCLI = () => {
     }
     if (args.t) {
         // save token
-        saveKeyValue("token", args.t)
+        return saveToken(args.t)
     }
     // print country
 
