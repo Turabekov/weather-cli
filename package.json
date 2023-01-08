@@ -1,5 +1,5 @@
 {
-  "name": "cliweatherprediction",
+  "name": "weathercli-uz",
   "version": "1.0.0",
   "description": "CLI for getting weather",
   "main": "weather.js",
@@ -19,7 +19,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://testkhumoyun.uz"
+    "url": "https://khumoyun.uz"
   },
   "dependencies": {
     "axios": "^1.2.2",
