@@ -1,6 +1,6 @@
 {
-  "name": "weathercli-uz",
-  "version": "1.0.0",
+  "name": "weather-cli-uzb",
+  "version": "1.0.1",
   "description": "CLI for getting weather",
   "main": "weather.js",
   "bin": {

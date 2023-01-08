@@ -28,7 +28,7 @@ const saveCity = async (city) => {
         await saveKeyValue(TOKEN_DICTIONARY.city, city)
         printSuccess("City saved!")
     } catch (error) {
-        printError(error.message)
+        printError(error.message, "-h for helping")
     }
 }
 
