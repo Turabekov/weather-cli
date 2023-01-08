@@ -2,6 +2,7 @@
 
 import { getArgs }  from "./helpers/args.js"
 import { printHelp } from "./services/log.services.js"
+import { saveKeyValue } from "./services/storage.service.js"
 
 
 const initCLI = () => {
@@ -18,6 +19,7 @@ const initCLI = () => {
     }
     if (args.t) {
         // save token
+        saveKeyValue("token", args.t)
     }
     // print country
 
